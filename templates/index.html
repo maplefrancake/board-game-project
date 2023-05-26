@@ -1,0 +1,38 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nearest Neighbor Results</title>
+    <style>
+        .center-text {
+          text-align: center;
+        }
+    
+        .center-block {
+          margin: 0 auto;
+          width: 200px;
+        }
+    
+        .center-flexbox {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 200px;
+        }
+    
+        .center-grid {
+          display: grid;
+          place-items: center;
+          height: 200px;
+        }
+      </style>
+</head>
+<body>
+    <h1>Nearest Neighbor Results</h1>
+    <form action="/" method="post">
+        <input type="text" name="search_query" placeholder="Enter search query">
+        <input type="submit" value="Search">
+    </form>
+    <p>{{ result | safe }}</p>
+</body>
+</html>
